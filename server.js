@@ -12,7 +12,9 @@ import seedData from "./seed.js";
 dotenv.config();
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: "https://couples-restaruant.netlify.app/",
+}));
 app.use(express.json());
 
 // Connect to MongoDB
