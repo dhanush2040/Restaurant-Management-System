@@ -13,7 +13,7 @@ dotenv.config();
 
 const app = express();
 app.use(cors({
-  origin: "https://couples-restaruant.netlify.app/",
+  origin: "https://couples-restaruant.netlify.app",
 }));
 app.use(express.json());
 
